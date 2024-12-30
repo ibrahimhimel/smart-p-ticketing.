@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smart-ticketing</title>
+    <link rel="shortcut icon" href="images/bus-logo.png" type="image/x-icon">
+
+    <!-- CDN for fontawesome  -->
+    <script src="https://kit.fontawesome.com/14dbfe327b.js" crossorigin="anonymous"></script>
+    <!-- CDN for tailwind and daisy -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CDN for fonts.googleapis -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'main-color': "#1DD100",
+                        'light-color': "#e8fae6",
+                        'second-color': "#FFBF0F",
+                        'third-color': "#F78C9C",
+                    },
+                    fontFamily: {
+                        raleway: ['Raleway'],
+                        inter: ['Inter'],
+                    }
+                }
+            }
+        }
+    </script>
+
+
+</head>
+
+<body class="font-raleway">
+
+    <!-- header section 01 -->
+    <section>
+        <header class="font-raleway">
+            <div class=" navbar container justify-between text-center mx-auto  px-8 lg:px-24  bg-base-100">
+                <div class="navbar bg-base-100 ">
+
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+                                <li><a>Home</a></li>
+                                <li><a>About</a></li>
+                                <li><a>Destination</a></li>
+                                <li><a>Search</a></li>
+                            </ul>
+                        </div>
+                        <a class="btn btn-ghost  text-xl sm: px-24 lg:px-2 ">P-Ticket</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1 ">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end">
+                        <a
+                            class="btn bg-light-color text-main-color border-main-color hover:border-black hover:bg-light-color">Bus
+                            <img src="images/bus-icon.png" alt="">
+                        </a>
+
+                    </div>
+                </div>
+
+        </header>
+    </section>
+
+    <!-- banner section 02 -->
+    <section class=" container justify-between text-center mx-auto px-8 mb-10 lg:mb-0">
+
+        <div class="hero bg-cover bg-center rounded-3xl" style="background-image: url('./images/Rectangle 3.png');">
+            <img class="invisible w-full" src="./images/Rectangle 3.png" alt="A description of the background image">
+            <div class="hero-content max-w-screen-md 2xl:max-w-5xl text-neutral-content text-center">
+                <div class="">
+                    <h1 class="mb-5 text-3xl md:text-5xl lg:text-6xl 2xl:text-8xl font-extrabold text-white">End-to-End
+                        Travel with
+                        <span class="text-main-color">P Paribahan</span>
+                    </h1>
+                    <p class="mb-5 text-xs md:text-base lg:text-lg 2xl:text-2xl">
+                        Yes, you can run unit tests and view the results directly within the app. The integrated testing
+                        features allow for a
+                        streamlined .
+                    </p>
+                    <button
+                        class="btn bg-main-color text-black border-0 h-auto min-h-7 md:min-h-10 px-2 md:px-3 lg:px-4 lg:min-h-12 text-xs md:text-lg lg:text-xl 2xl:text-2xl font-bold hover:bg-black hover:text-main-color">Buy
+                        Tickets</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- card section 03 -->
+    <section class="lg:-mt-12 sm:-mt-20">
+        <div class="px-5  flex flex-col justify-center gap-4  sm:flex-row ">
+            <div
+                class="flex border-b-4 border-main-color lg:max-w-60  w-full  bg-white p-3 rounded-2xl gap-2 items-center md:max-w-48  sm:max-w-44 justify-center  border-main-colorcursor-pointer">
+                <img class="h-auto w-full max-w-12" src="./images/people.png" alt="Registered Users" srcset="">
+                <div>
+                    <div class="lg:text-4xl font-extrabold font-inter text-4xl md:text-2xl sm:text-xl">500K+</div>
+                    <div class="sm:text-xs lg:text-base text-base">Registered Users</div>
+                </div>
+            </div>
+            <div
+                class="flex lg:max-w-60 w-full border-b-4 border-main-color bg-white p-3 rounded-2xl gap-2 items-center md:max-w-48 sm:max-w-44 justify-center cursor-pointer">
+                <img class="h-auto w-full max-w-12" src="./images/ticket-cupon.png" alt="Registered Users" srcset="">
+                <div>
+                    <div class="lg:text-4xl font-bold font-inter text-4xl md:text-2xl sm:text-xl">1.7 lacks</div>
+                    <div class="sm:text-xs lg:text-base text-base">Tickets sold</div>
+                </div>
+            </div>
+            <div
+                class="flex lg:max-w-60 w-full border-b-4 border-main-color bg-white p-3 rounded-2xl gap-2 items-center md:max-w-48 sm:max-w-44 justify-center cursor-pointer">
+                <img class="h-auto w-full max-w-12" src="./images/stoppage.png" alt="Registered Users" srcset="">
+                <div>
+                    <div class="lg:text-4xl font-extrabold font-inter text-4xl md:text-2xl sm:text-xl">80K+</div>
+                    <div class="sm:text-xs lg:text-base text-base">Rental partners</div>
+                </div>
+            </div>
+            <!-- card section end 03 -->
+    </section>
+    <!-- Coupon section 04 -->
+
+    <section>
+        <div class=" container justify-between text-center mx-auto px-8 mb-10 lg:mb-0">
+            <div class="mt-20">
+                <h1 class="font-bold text-3xl  text-center">Best offers for you</h1>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-5 mt-8 justify-between px-3 md:">
+                <div class="flex w-full  items-center  bg-second-color rounded-3xl pl-10 ">
+                    <div>
+                        <h1 class="font-bold text-4xl lg:pl-10 ">15% OFF</h1>
+                        <h4 class="font-semibold text-black text-sm">on your next purchase</h4>
+                        <p class="font-medium text-sm">use by January 2024</p>
+                    </div>
+                    <img class="h-36 pl-10 sm:h-auto lg:pl-36" src="./images/cupon-devider.png" alt="" srcset="">
+                    <div>
+                        <h1 class="font-bold text-3xl lg:pl-10">NEW15</h1>
+                        <p class="">Coupon Code</p>
+                    </div>
+                </div>
+                <div class="flex w-full  items-center  bg-third-color rounded-3xl pl-7 ">
+                    <div>
+                        <h1 class="font-bold text-4xl lg:pl-10">20% OFF</h1>
+                        <p class=" text-black">on your next purchase</p>
+                        <p class="font-medium ">use by January 2024</p>
+                    </div>
+                    <img class="h-36 pl-10 sm:h-auto lg:pl-36 " src="./images/cupon-devider.png" alt="" srcset="">
+                    <div>
+                        <h1 class="font-bold text-2xl lg:pl-8">Couple 20</h1>
+                        <p class="text-sm">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center"><button
+                class="btn btn-xs mt-10 sm:btn-sm md:btn-md lg:btn-lg btn-outline border-main-color text-main-color hover:bg-main-color hover:border-main-color">See
+                All Offers</button></div>
+        </div>
+
+    </section>
+    <section>
+        <div class="rounded-t-3xl bg-grey-color px-5 py-10  mt-20 sm:py-24 border-t-4 border-main-color">
+            <div>
+                <h2 class="text-center font-bold text-2xl sm:text-4xl mb-5 sm:mb-10">P.H Paribahan</h2>
+                <p class="font-inter text-xs sm:text-base text-center mb-10 text-slate-500 max-w-2xl mx-auto">Yes, you
+                    can
+                    run
+                    unit tests and view the results directly within the app. The integrated testing features allow for a
+                    streamlined.</p>
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Section -->
+
+    <footer class="bg-black text-white px-5 py-24">
+        <div class="max-w-7xl mx-auto flex items-center lg:justify-between flex-col lg:flex-row">
+            <div class="mb-6 lg:mb-0">
+                <h1 class="text-3xl font-bold mb-3 text-center lg:text-left">P-Ticket</h1>
+                <p class="font-inter max-w-96 text-center mx-auto lg:text-left">P-Ticket is a digital platform to make
+                    your daily commuting better.</p>
+            </div>
+            <div class="text-right">
+                <h3 class="text-2xl lg:text-xl font-semibold mb-2 text-center lg:text-right">Download our app</h3>
+                <img class="max-w-48" src="./images/Group 104.png" alt="Google Play Store">
+            </div>
+        </div>
+        <hr class="max-w-7xl mx-auto border-0 border-b-2 border-dashed border-gray-400 my-10">
+        <div class="max-w-7xl mx-auto flex lg:justify-between font-inter flex-col lg:flex-row items-center">
+            <p class="text-gray-400 text-center lg:text-left order-2">@all rights reserved, P-Ticket services
+                limited.2024</p>
+            <div class="text-center sm:text-right order-1 mb-5 lg:mb-0 lg:order-2">
+                <a href="#" class="mr-5">Terms & Condition</a>
+                <a href="#" class="mr-5">Return & Refund Policy</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
